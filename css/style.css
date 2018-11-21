@@ -65,6 +65,7 @@ body{
 
 .container2 > ul{
     padding-left:0;
+    
     list-style-type: none;
     justify-content: center;
     flex-grow: 1;
@@ -78,12 +79,24 @@ body{
     justify-content: center;
     flex-grow: 1;
     display: flex;
+    height: 100%;
     
 }
 .container2 > ul li a{ 
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-size: 25px;    
+}
+.container2 > ul li a:after{ 
+    content: "";
+    position: relative;
+    display: none;
+    left:25%;
+    top:1%;
+    border-bottom: 2px solid #ff7c06;
+    width:50%;
+    
     
 }
 .img-no:hover{
@@ -91,11 +104,27 @@ body{
     border-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
+.img-no:after{
+    position: relative !important;
+    border-bottom: 0 !important;
+    display: none;
+    
+}
+.img-no:after:hover{
+    position: relative !important;
+    border-bottom: 0 !important;
+    display: none;
+    
+}
 
 .container2 > ul li a:hover{ 
     color: #ff7c06;
-    border-bottom: 3px solid #ff7c06;
-    padding-bottom:5%;
+    
+}
+.container2 > ul li a:hover:after{ 
+    
+    display: block;
+    
     
 }
 .box{
