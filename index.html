@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>GoBar | Inicio</title>
 </head>
 <body>
@@ -51,7 +53,7 @@
                     <div class="box2">
                             <img src="img/tarj.jpg" alt="" width="50%">
                     </div>
-                <div >
+                <div class="int">
                         <h2>MEDIOS DE PAGO</h2>
                         <p>12 cuotas sin interes</p>
                 </div>
@@ -60,9 +62,9 @@
                 <div class="box2">
                         <img src="img/caj.jpg" alt="" width="50%">
                 </div>
-                <div class="">
-                    <h2>VENTA TELEFÓNICA</h2>
-                    <p>0800 444 7462</p>
+                <div class="int">
+                    <h2>RETIRO EN TIENDA</h2>
+                    <p>Todos los productos</p>
                 </div>
             </div>
             <div class="box2">
@@ -70,7 +72,7 @@
                         <img src="img/swa.jpg" alt="" width="40%">  
                 </div>
            
-            <div class="">
+            <div class="int">
                     <h2>VENTA TELEFÓNICA</h2>
                     <p>0800 444 7462</p>
             </div>
@@ -80,7 +82,7 @@
                 <div class="box2">
                         <img src="img/tarj.jpg" alt="" width="50%"> 
                 </div>
-                <div class="">
+                <div class="int">
                         <h2>MEDIOS DE PAGO</h2>
                         <p>12 cuotas sin interes</p>
                 </div>
@@ -90,7 +92,82 @@
                 <h1 class="box2">PROMOCIONES</h1>
         </div>
         <div class="container5">
-
+            <div class="flex">
+                <button class="flecha"><i class="fas fa-arrow-left"></i></button>
+            </div>
+            <div class="flex-fix">
+                    <button class="flecha"><i class="fas fa-arrow-right"></i></button>
+            </div>   
+            <div class="owl-carousel owl-theme margen">
+                    <div class="item">
+                            <div class="img">
+                                    <img src="img/bote.jpg" alt="">
+                            </div>
+                            <h3>Baron B Brut rose</h3>
+                            <p>Precio en 1 pago</p>
+                            <h2>$3180</h2>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="item">
+                                <div class="img">
+                                        <img src="img/bote.jpg" alt="" >
+                                </div>
+                            <h3>Baron B Brut rose</h3>
+                            <p>Precio en 1 pago</p>
+                            <h2>$3180</h2>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="item">
+                                <div class="img">
+                                        <img src="img/bote.jpg" alt="" >
+                                </div>
+                            <h3>Baron B Brut rose</h3>
+                            <p>Precio en 1 pago</p>
+                            <h2>$3180</h2>
+                            <a href="#">Comprar</a>
+                        </div>
+            </div>      
+        </div>
+        <div class="container">
+            <div>
+                <h2>destacados del mes</h2>
+                <p><img src="img/cer.jpg"><span>cervezas</span></p>
+            </div>
+            <div class="flex">
+                    <button class="flecha"><i class="fas fa-arrow-left"></i></button>
+                </div>
+                <div class="flex-fix">
+                        <button class="flecha"><i class="fas fa-arrow-right"></i></button>
+                </div>  
+            <div class="owl-carousel owl-theme margen">
+                    <div class="item">
+                            <div class="img">
+                                    <img src="img/bote.jpg" alt="">
+                            </div>
+                            <h3>Baron B Brut rose</h3>
+                            <p>Precio en 1 pago</p>
+                            <h2>$3180</h2>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="item">
+                                <div class="img">
+                                        <img src="img/bote.jpg" alt="" >
+                                </div>
+                            <h3>Baron B Brut rose</h3>
+                            <p>Precio en 1 pago</p>
+                            <h2>$3180</h2>
+                            <a href="#">Comprar</a>
+                        </div>
+                        <div class="item">
+                                <div class="img">
+                                        <img src="img/bote.jpg" alt="" >
+                                </div>
+                            <h3>Baron B Brut rose</h3>
+                            <p>Precio en 1 pago</p>
+                            <h2>$3180</h2>
+                            <a href="#">Comprar</a>
+                        </div>
+            </div>      
         </div>
 </body>
 <script
@@ -98,4 +175,20 @@
 			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 			  crossorigin="anonymous"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
 </html>
