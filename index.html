@@ -91,15 +91,12 @@
         <div class="container">
                 <h1 class="box2">PROMOCIONES</h1>
         </div>
-        <div class="container5">
-            <div class="flex">
-                <button class="flecha"><i class="fas fa-arrow-left"></i></button>
-            </div>
-            <div class="flex-fix">
-                    <button class="flecha"><i class="fas fa-arrow-right"></i></button>
-            </div>   
-            <div class="owl-carousel owl-theme margen">
+        <div class="container5">  
+            <div class="owl-carousel owl-theme margen" id="car1">
                     <div class="item">
+                            <div class="disc">
+                                    <p>20%</p>
+                            </div>
                             <div class="img">
                                     <img src="img/bote.jpg" alt="">
                             </div>
@@ -109,6 +106,9 @@
                             <a href="#">Comprar</a>
                         </div>
                         <div class="item">
+                                <div class="disc">
+                                        <p>20%</p>
+                                </div>
                                 <div class="img">
                                         <img src="img/bote.jpg" alt="" >
                                 </div>
@@ -118,6 +118,9 @@
                             <a href="#">Comprar</a>
                         </div>
                         <div class="item">
+                                <div class="disc">
+                                        <p>20%</p>
+                                    </div>
                                 <div class="img">
                                         <img src="img/bote.jpg" alt="" >
                                 </div>
@@ -126,48 +129,58 @@
                             <h2>$3180</h2>
                             <a href="#">Comprar</a>
                         </div>
-            </div>      
-        </div>
-        <div class="container">
-            <div>
-                <h2>destacados del mes</h2>
-                <p><img src="img/cer.jpg"><span>cervezas</span></p>
-            </div>
-            <div class="flex">
+            </div>  
+            <div class="naveg">
+                <div class="flex" id="prev">
                     <button class="flecha"><i class="fas fa-arrow-left"></i></button>
                 </div>
-                <div class="flex-fix">
+                <div class="flex-fix" id="sig">
                         <button class="flecha"><i class="fas fa-arrow-right"></i></button>
-                </div>  
-            <div class="owl-carousel owl-theme margen">
-                    <div class="item">
-                            <div class="img">
-                                    <img src="img/bote.jpg" alt="">
+                </div>     
+        </div>
+        </div>
+        <div class="">
+                <div class="mensaje">
+                    <h2>destacados del mes</h2>
+                    <p><img src="img/cer.jpg"><span>cervezas</span></p>
+                </div>
+                <div class="owl-carousel owl-theme  arreglo" id="carrusel">
+                        <div class="item">
+                                <div class="img">
+                                        <img src="img/bote.jpg" alt="">
+                                </div>
+                                <h3>Baron B Brut rose</h3>
+                                <p>Precio en 1 pago</p>
+                                <h2>$3180</h2>
+                                <a href="#">Comprar</a>
                             </div>
-                            <h3>Baron B Brut rose</h3>
-                            <p>Precio en 1 pago</p>
-                            <h2>$3180</h2>
-                            <a href="#">Comprar</a>
+                            <div class="item">
+                                    <div class="img">
+                                            <img src="img/bote.jpg" alt="" >
+                                    </div>
+                                <h3>Baron B Brut rose</h3>
+                                <p>Precio en 1 pago</p>
+                                <h2>$3180</h2>
+                                <a href="#">Comprar</a>
+                            </div>
+                            <div class="item">
+                                    <div class="img">
+                                            <img src="img/bote.jpg" alt="" >
+                                    </div>
+                                <h3>Baron B Brut rose</h3>
+                                <p>Precio en 1 pago</p>
+                                <h2>$3180</h2>
+                                <a href="#">Comprar</a>
+                            </div>
+                </div>
+                <div class="naveg2">
+                        <div class="flex" id="prev">
+                            <button class="flecha"><i class="fas fa-arrow-left"></i></button>
                         </div>
-                        <div class="item">
-                                <div class="img">
-                                        <img src="img/bote.jpg" alt="" >
-                                </div>
-                            <h3>Baron B Brut rose</h3>
-                            <p>Precio en 1 pago</p>
-                            <h2>$3180</h2>
-                            <a href="#">Comprar</a>
-                        </div>
-                        <div class="item">
-                                <div class="img">
-                                        <img src="img/bote.jpg" alt="" >
-                                </div>
-                            <h3>Baron B Brut rose</h3>
-                            <p>Precio en 1 pago</p>
-                            <h2>$3180</h2>
-                            <a href="#">Comprar</a>
-                        </div>
-            </div>      
+                        <div class="flex-fix" id="sig">
+                                <button class="flecha"><i class="fas fa-arrow-right"></i></button>
+                        </div>     
+                </div>     
         </div>
 </body>
 <script
@@ -176,7 +189,8 @@
 			  crossorigin="anonymous"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
-    $('.owl-carousel').owlCarousel({
+    $(document).ready(function(){
+        $('#car1').owlCarousel({
     loop:true,
     responsive:{
         0:{
@@ -190,5 +204,29 @@
         }
     }
 })
+$('#carrusel').owlCarousel({
+    loop:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+$('#sig').click(function() {
+    $('#car1').trigger('next.owl.carousel', [300]);
+})
+
+$('#prev').click(function() {
+    $('#car1').trigger('prev.owl.carousel', [300]);
+})
+
+    })
+    
 </script>
 </html>

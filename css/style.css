@@ -11,9 +11,6 @@ body{
     flex-direction: row;
     height: 45px;
 }
-.container::after{
-    display: block;
-}
 .container2{
     width: 80%;
     display: flex;
@@ -75,6 +72,23 @@ body{
     line-height: 0;
     padding-top: 2px;
 }
+.disc{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #ff7c06;
+    position: absolute;
+    top:10%;
+    left:28%;
+    z-index: 1;
+}
+.disc p{
+    line-height: 0;
+    color:white;
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 50%;
+}
 .item a{
     border: 1px solid black;
     border-radius: 20px;
@@ -86,18 +100,70 @@ body{
     font-size: 20px;
     color:black;
 }
+.mensaje{
+    margin-left:2%;
+    width: 15%;
+    float: left;
+}
+.mensaje h2{
+    color: #ff7c06;
+    text-transform: uppercase;
+    font-size:42px;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+.mensaje p{
+    margin-top:10px;
+}
+.mensaje span{
+    text-transform: uppercase;
+    font-size:20px;
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+    margin-left: 5px;
+    padding: 3% 0;
+}
+.mensaje span::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width:45%;
+    height: 22px;
+    padding: 9% 0;
+    top:2%;
+    margin-top: -1px;
+}
+.arreglo{
+    float: left; 
+    width: 70% !important;
+    margin:auto;
+}
 .item a:hover{
     background-color:black;
     color:white;
 }
 .flex{
     display: block;
-    position: absolute;
-    bottom: -30%;
+    position: relative;
     left:2%;
     z-index: 2;
-    
+    float:left;
 }
+.flex-fix{
+    display: block;
+    position: relative;
+    z-index: 2;
+    float:right;
+    right:2%;
+}
+.naveg{
+    position: relative;
+    bottom:25vh;
+}
+
 .margen{
     width: 90% !important;
     margin: auto;
@@ -111,13 +177,7 @@ body{
 .flecha:hover{
     cursor: pointer;
 }
-.flex-fix{
-    display: block;
-    position: absolute;
-    left:97%;
-    bottom: -30%;
-    z-index: 2;
-}
+
 .container5::before{
     width:0px;
     content: "";
@@ -129,7 +189,7 @@ body{
     line-height:0px;
     position: relative;
     left:47%;
-    bottom: 54px;
+    bottom: 72px;
     justify-content: center;
     
 }
