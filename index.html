@@ -139,13 +139,13 @@
                 </div>     
         </div>
         </div>
-        <div class="">
+        <div class="" style="margin-top:3%;">
                 <div class="mensaje">
                     <h2>destacados del mes</h2>
                     <p><img src="img/cer.jpg"><span>cervezas</span></p>
                 </div>
                 <div class="owl-carousel owl-theme  arreglo" id="carrusel">
-                        <div class="item">
+                        <div class="item2">
                                 <div class="img">
                                         <img src="img/bote.jpg" alt="">
                                 </div>
@@ -154,7 +154,7 @@
                                 <h2>$3180</h2>
                                 <a href="#">Comprar</a>
                             </div>
-                            <div class="item">
+                            <div class="item2">
                                     <div class="img">
                                             <img src="img/bote.jpg" alt="" >
                                     </div>
@@ -163,7 +163,7 @@
                                 <h2>$3180</h2>
                                 <a href="#">Comprar</a>
                             </div>
-                            <div class="item">
+                            <div class="item2">
                                     <div class="img">
                                             <img src="img/bote.jpg" alt="" >
                                     </div>
@@ -175,13 +175,62 @@
                 </div>
                 <div class="naveg2">
                         <div class="flex" id="prev2">
-                            <button class="flecha"><i class="fas fa-arrow-left"></i></button>
+                            <button class="flecha2"><i class="fas fa-arrow-left"></i></button>
                         </div>
                         <div class="flex-fix" id="sig2">
-                                <button class="flecha"><i class="fas fa-arrow-right"></i></button>
+                                <button class="flecha2"><i class="fas fa-arrow-right"></i></button>
                         </div>     
                 </div>     
         </div>
+        <div class="container2" style="margin-top:3%;">
+            <div class="box2 banner">
+                <h1>BANNER</h1>
+            </div>
+            <div class="box2 banner">
+                <h1>BANNER</h1>
+            </div>
+        </div>
+        <div class="container2" style="margin-top:3%;">
+            <h1 class="titulo">LO MAS VISTO</h1>
+        </div>
+        <div class="owl-carousel owl-theme" id="carrusel2" style="width: 91% !important; margin:auto;">
+            <div class="item3">
+                    <div class="img">
+                            <img src="img/bote.jpg" alt="">
+                    </div>
+                    <h3>Baron B Brut rose</h3>
+                    <p>Precio en 1 pago</p>
+                    <h2>$3180</h2>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="item3">
+                        <div class="img">
+                                <img src="img/bote.jpg" alt="" >
+                        </div>
+                    <h3>Baron B Brut rose</h3>
+                    <p>Precio en 1 pago</p>
+                    <h2>$3180</h2>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="item3">
+                        <div class="img">
+                                <img src="img/bote.jpg" alt="" >
+                        </div>
+                    <h3>Baron B Brut rose</h3>
+                    <p>Precio en 1 pago</p>
+                    <h2>$3180</h2>
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="item3">
+                    <div class="img">
+                            <img src="img/bote.jpg" alt="" >
+                    </div>
+                <h3>Baron B Brut rose</h3>
+                <p>Precio en 1 pago</p>
+                <h2>$3180</h2>
+                <a href="#">Comprar</a>
+            </div>
+    </div>
 </body>
 <script
 			  src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -232,6 +281,21 @@ $('#sig2').click(function() {
 
 $('#prev2').click(function() {
     $('#carrusel').trigger('prev.owl.carousel', [300]);
+})
+
+$('#carrusel2').owlCarousel({
+    loop:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
 })
 
     })

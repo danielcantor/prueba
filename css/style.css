@@ -72,6 +72,57 @@ body{
     line-height: 0;
     padding-top: 2px;
 }
+.item2{
+    text-align: center;
+    min-height: 375px;
+    border: 2px solid rgba(128, 128, 128, .3);
+    border-radius: 2%;
+    width: 60%;    
+}
+.item2 .img{
+    width: 250px;
+    border-radius: 50%;
+    background-color: white;
+    height: 250px;
+    position: relative;
+    left:5%;
+}
+.item2 .img img{
+    width: 70% !important;
+    position: relative;
+    left: 15%;
+    top: 15%;
+}
+.item2 h3{
+    line-height: 0;
+}
+.item2 p{
+    font-size: 12px;
+    color:gray;
+    text-transform: uppercase;
+}
+.item2 h2{
+    color:#ff7c06;
+    line-height: 0;
+    padding-top: 2px;
+}
+.item2 a{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1% 5.5%;
+    text-decoration: none;
+    background-color: white;
+    text-transform: uppercase;
+    margin-top: 1%;
+    font-weight: 600;
+    font-size: 20px;
+    color:black;
+}
+.item2 a:hover{
+    background-color:#ff7c06;
+    color:white;
+    border: 0;
+}
 .disc{
     height: 60px;
     width: 60px;
@@ -139,7 +190,7 @@ body{
 .arreglo{
     float: left; 
     width: 70% !important;
-    margin:auto;
+    margin-left:8%;
 }
 .arreglo::after{
     float: none; 
@@ -163,20 +214,37 @@ body{
     float:right;
     right:2%;
 }
+#prev{
+    left:9% !important;
+}
+#sig{
+    right:9% !important;
+}
+#sig2{
+    left:1% !important;
+}
+#prev2{
+    left:0 !important;
+}
+.banner{
+    border: 2px solid rgba(128, 128, 128, .5);
+    margin-left: 1%;
+}
+.banner h1{
+    color:gray;
+    opacity: .5;
+    font-size: 70px;
+}
 .naveg{
     position: relative;
     bottom:25vh;
 }
 .naveg2{
     position: relative;
-
-width: 70%;
-
-float: right;
-
-bottom: 25vh;
-
-right: 9vw;
+    width: 70%;
+    float: right;
+    bottom: 25vh;
+    right: 9vw;
 }
 .margen{
     width: 90% !important;
@@ -189,6 +257,30 @@ right: 9vw;
     font-size: 25px;
 }
 .flecha:hover{
+    cursor: pointer;
+}
+
+.titulo::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 2.5%;
+    left: 48vw;
+    /*! bottom:-100vh; */
+    border-bottom: 3px solid #ff7c06; 
+    /*! z-index: 2; */
+    padding-top: 2.2%; 
+}
+.flecha2{
+    color:gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: transparent;
+    font-size: 20px;
+}
+.flecha2:hover{
     cursor: pointer;
 }
 
