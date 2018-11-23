@@ -174,10 +174,10 @@
                             </div>
                 </div>
                 <div class="naveg2">
-                        <div class="flex" id="prev">
+                        <div class="flex" id="prev2">
                             <button class="flecha"><i class="fas fa-arrow-left"></i></button>
                         </div>
-                        <div class="flex-fix" id="sig">
+                        <div class="flex-fix" id="sig2">
                                 <button class="flecha"><i class="fas fa-arrow-right"></i></button>
                         </div>     
                 </div>     
@@ -224,6 +224,14 @@ $('#sig').click(function() {
 
 $('#prev').click(function() {
     $('#car1').trigger('prev.owl.carousel', [300]);
+})
+
+$('#sig2').click(function() {
+    $('#carrusel').trigger('next.owl.carousel', [300]);
+})
+
+$('#prev2').click(function() {
+    $('#carrusel').trigger('prev.owl.carousel', [300]);
 })
 
     })

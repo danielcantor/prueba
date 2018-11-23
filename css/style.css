@@ -141,6 +141,10 @@ body{
     width: 70% !important;
     margin:auto;
 }
+.arreglo::after{
+    float: none; 
+    
+}
 .item a:hover{
     background-color:black;
     color:white;
@@ -163,7 +167,17 @@ body{
     position: relative;
     bottom:25vh;
 }
+.naveg2{
+    position: relative;
 
+width: 70%;
+
+float: right;
+
+bottom: 25vh;
+
+right: 9vw;
+}
 .margen{
     width: 90% !important;
     margin: auto;
